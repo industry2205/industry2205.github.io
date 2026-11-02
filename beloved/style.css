@@ -1,0 +1,14 @@
+:root { --bg:#F5F4FA; --card:#FFFFFF; --ink:#15142A; --soft:#575674; --brand:#5B48F0; --hit:#F2B21B; --stage:#0D0F1F; --stageInk:#F2F1FA; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0D0F1F; --card:#181A30; --ink:#F2F1FA; --soft:#A6A4C4; --brand:#8577FF; --hit:#FFC53D; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.55 ui-rounded,-apple-system,system-ui,sans-serif; }
+main { max-width:680px; margin:0 auto; padding:40px 16px 60px; }
+h1 { font-size:30px; line-height:1.2; } h2 { font-size:21px; margin-top:28px; }
+a { color:var(--brand); } li { margin:6px 0; }
+footer { margin-top:40px; font-size:15px; color:var(--soft); } footer a { margin-right:16px; }
+.hero { background:var(--stage); color:var(--stageInk); border-radius:22px; padding:28px 22px; }
+.hero h1 { margin:8px 0 6px; } .hero p { color:rgba(242,241,250,.6); margin:0; }
+.btn { display:block; text-align:center; padding:16px; border-radius:999px; background:var(--brand); color:#fff; font-weight:700; text-decoration:none; margin-top:16px; }
+@media (prefers-color-scheme: dark) { .btn { color:#0D0F1F; } }
+.btn.secondary { background:var(--card); color:var(--ink); }
+.mark { display:flex; align-items:center; gap:8px; font-weight:900; font-size:20px; }
